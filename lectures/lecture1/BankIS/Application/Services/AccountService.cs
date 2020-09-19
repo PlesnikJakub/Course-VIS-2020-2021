@@ -1,10 +1,15 @@
-﻿namespace Application.Services
+﻿using Infrastructure.Repositories;
+
+namespace Application.Services
 {
     public class AccountService
     {
         public int GetAccountBalance(int accountId)
         {
-            return 100000;
+            var repository = new AccountRepository();
+            var account = repository.GetAccount(accountId);
+
+            return account.Balance;
         }
     }
 }
