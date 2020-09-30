@@ -21,7 +21,7 @@ Main communication platform is Email and MS Teams.
 Always use school email for communications and use signature at the end of email.
 
 ## Lectures
-* [Lecture 1](/lectures/lecture1/readme.md)  - Information about subject, general overview of OOP. 
+* [Lecture 1](/lectures/lecture1/Readme.md)  - Information about subject, general overview of OOP. 
 * Lecture 2 - WIP
 
 ## Artefacts
