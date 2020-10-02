@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DataLayer
 {
@@ -8,6 +6,7 @@ namespace DataLayer
     {
         public void SubmitOrder(int userId, DateTime now, double totalPrice)
         {
+            // PLACE FOR SQL CALL
             throw new NotImplementedException();
         }
     }

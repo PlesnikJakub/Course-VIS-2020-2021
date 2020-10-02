@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DataLayer
 {
@@ -8,6 +6,7 @@ namespace DataLayer
     {
         public double GetDiscountForUser(int userId)
         {
+            // PLACE FOR SQL CALL
             throw new NotImplementedException();
         }
     }

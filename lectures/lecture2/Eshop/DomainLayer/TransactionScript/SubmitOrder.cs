@@ -1,9 +1,7 @@
 ﻿using DataLayer;
 using DomainLayer.DTO;
-using DomainLayer.TransactionScript.DTO;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DomainLayer.TransactionScript
 {
