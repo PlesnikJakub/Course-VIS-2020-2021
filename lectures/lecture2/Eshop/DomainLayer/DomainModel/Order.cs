@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DomainLayer.DTO;
+using System;
 using System.Collections.Generic;
 
 namespace DomainLayer.DomainModel
@@ -14,17 +15,23 @@ namespace DomainLayer.DomainModel
 
         public User Customer { get; set; }
 
-        public IEnumerable<OrderItem> Items { get; set; }
+        public IEnumerable<OrderItemDTO> Items { get; set; }
 
         public DateTime CreatedAt { get; private set; }
 
         public double InvoicedPrice { get; private set; }
 
+
+        public Order(int userId, IEnumerable<OrderItemDTO> items)
+        {
+            Customer = User.GetCustomeById(userId);
+            CreatedAt = DateTime.Now;
+            Items = items;
+        }
+
         // Logic
         public void SubmitOrder()
         {
-            CreatedAt = DateTime.Now;
-
             double totalPrice = 0;
             foreach (var item in Items)
             {

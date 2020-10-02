@@ -9,5 +9,10 @@ namespace DomainLayer.DomainModel
         public string Name { get; set; }
 
         public double DiscountRate { get; internal set; }
+
+        public static User GetCustomeById()
+        {
+            return new User();
+        }
     }
 }
