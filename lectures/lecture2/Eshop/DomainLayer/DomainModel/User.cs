@@ -10,7 +10,7 @@ namespace DomainLayer.DomainModel
 
         public double DiscountRate { get; internal set; }
 
-        public static User GetCustomeById()
+        public static User GetCustomeById(int userId)
         {
             return new User();
         }
