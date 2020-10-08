@@ -21,4 +21,10 @@ Vaším úkolem je si vybral alespon 3 use casy a sepsat pro ně scánáře ve f
   1. Vydání léku pacientu
   1. Zrušení platnosti receptu
 
+
+## Activity diagram
+
+Vaším úkolem je pro každý scénář vytvořit diagram aktivit.
+
+https://www.uml-diagrams.org/activity-diagrams-examples.html
   
