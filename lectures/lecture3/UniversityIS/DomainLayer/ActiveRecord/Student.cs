@@ -2,6 +2,9 @@
 
 namespace DomainLayer.ActiveRecord
 {
+    /// <summary>
+    /// Yes this class belongs to DomainLayer. This doesnt mean that there must be SQL written directly.
+    /// </summary>
     public class Student
     {
         // Data
