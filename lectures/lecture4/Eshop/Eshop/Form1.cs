@@ -1,15 +1,6 @@
-﻿using DomainLayer.DomainModel;
-using DomainLayer.DTO;
-using DomainLayer.TableModule;
-using DomainLayer.TransactionScript;
+﻿using DomainLayer.LazyLoading;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Eshop
@@ -26,29 +17,25 @@ namespace Eshop
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button1_Click(object sender, EventArgs e)
+        private void LazyLoadingBtn_Click(object sender, EventArgs e)
         {
-            // SOME DATA FROM UI
-            var userId = 1;
-            var orderItems = new List<OrderItemDTO>();
-            orderItems.Add(new OrderItemDTO
-            {
-                Name = "SomeBook",
-                Amount = 2,
-                Price = 1750
-            });
+            // place breakpoint into lazy load function and see when its hit
+            // Sometime it is the debugger - preview that triggers the loading
+            // This behavior can be controlled with Tools - Options - Debugging - General - "Enable property evaluation and other implicit function calls"
+            var customer = new DomainLayer.LazyLoading.Customer();
+            customer.Age = 5;
+            customer.Name = "test";
+            var addresses = customer.Addresses;
+        }
 
-            // DomainModel
-            var order = new Order(userId, orderItems);
-            order.SubmitOrder();
+        private void UnitOfWorkBtn_Click(object sender, EventArgs e)
+        {
 
-            // TableModule
-            var tableModule = new OrderModule();
-            tableModule.SubmitOrder(userId,orderItems);
+        }
 
-            // TransactionScript
-            var transactionScript = new SubmitOrder();
-            transactionScript.Execute(userId, orderItems);
+        private void IdentityMapBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
