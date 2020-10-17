@@ -22,7 +22,9 @@ Always use school email for communications and use signature at the end of email
 
 ## Lectures
 * [Lecture 1](/lectures/lecture1/Readme.md)  - Information about subject, general overview of OOP. 
-* [Lecture 2](/lectures/lecture2/Readme.md)  - Domayin layer design patterns
+* [Lecture 2](/lectures/lecture2/Readme.md)  - Domain Logic Patterns
+* [Lecture 3](/lectures/lecture3/Readme.md)  - Data Source Architectural Patterns
+* [Lecture 4](/lectures/lecture4/Readme.md)  - Object-Relational Behavioral Patterns
 
 ## Artefacts
 1. [Vision](/artefacts/artefakt1.md)
