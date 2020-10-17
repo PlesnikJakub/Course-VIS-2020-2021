@@ -56,3 +56,4 @@
             UnitOfWork.getCurrent().registerRemove(this);
         }
     }
+}
