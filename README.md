@@ -27,7 +27,7 @@ Always use school email for communications and use signature at the end of email
 ## Artefacts
 1. [Vision](/artefacts/artefakt1.md)
 2. [Functional specification](/artefacts/artifact2.md)
-3. Technical Specification :TBA
+3. [Technical Specification ](/artefacts/artifact3.md)
 4. Wireframes :TBA
 5. Domain model :TBA
 6. Architecture :TBA
