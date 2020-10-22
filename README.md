@@ -1,4 +1,4 @@
-# VsbCourseVIS
+# Vsb Course - VIS - Information Systems Development 
 
 ## Description :WIP
 Goal of this course is to ... 
