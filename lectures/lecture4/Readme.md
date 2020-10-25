@@ -1,4 +1,4 @@
-# Leacture 3 - CZ
+# Leacture 4 - CZ
 Ukázkové zdrojové kody implementují návrhové vzory Objektově relačního mapování.
 
 ## Links
