@@ -35,6 +35,8 @@ Always use school email for communications and use signature at the end of email
 5. Domain model :TBA
 6. Architecture :TBA
 
+## Project
+1. [Project](/project/readme.md)
 
 ## Contact
 You can contact me on this email :blush:
