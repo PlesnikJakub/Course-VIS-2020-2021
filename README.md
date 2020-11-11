@@ -26,6 +26,8 @@ Always use school email for communications and use signature at the end of email
 * [Lecture 3](/lectures/lecture3/Readme.md)  - Data Source Architectural Patterns
 * [Lecture 4](/lectures/lecture4/Readme.md)  - Object-Relational Behavioral Patterns
 * [Lecture 5](/lectures/lecture5/Readme.md)  - Object-Relational Structural Patterns
+* [Lecture 6](/lectures/lecture6/readme.md)  - Base Patterns and Object-Relational Metadata Mapping Patterns
+* [Lecture 7](/lectures/lecture7/readme.md)  - Project settup witn SQL database
 
 ## Artefacts
 1. [Vision](/artefacts/artefakt1.md)
