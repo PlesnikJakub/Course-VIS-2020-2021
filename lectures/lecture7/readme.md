@@ -74,3 +74,7 @@ Check following classes to see how you can implement DB queries.
 
 * DataLayer3.TableDataGateway.CustomerTableGateway
 * DataLayer.DataMapper.DataMapper
+
+## Step 6 - Celebrate
+
+Good job making it all the way down there! :rocket:
