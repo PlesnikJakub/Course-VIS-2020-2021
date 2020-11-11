@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0A88A9F-5187-4DDA-AFE5-D835B47535D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DomainLayer</RootNamespace>
+    <AssemblyName>DomainLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomerIdentityMap.cs" />
+    <Compile Include="DBConnector.cs" />
+    <Compile Include="DomainModelUnitOfWork\Customer.cs" />
+    <Compile Include="DomainModelUnitOfWork\IUnitOfWorkCompatible.cs" />
+    <Compile Include="DomainModel\Address.cs" />
+    <Compile Include="DomainModel\Customer.cs" />
+    <Compile Include="DomainModel\IAddressTableGateway.cs" />
+    <Compile Include="DomanModelActiveRecord\CustomerActiveRecord.cs" />
+    <Compile Include="DomainModel\Payment.cs" />
+    <Compile Include="DomainModel\Worksheet.cs" />
+    <Compile Include="DTO\CustomerAdressDTO.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="ICustomerDataGateway.cs" />
+    <Compile Include="IdentityMap.cs" />
+    <Compile Include="IMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableModule\CustomerTableModule.cs" />
+    <Compile Include="DomainModelUnitOfWork\UnitOfWork.cs" />
+    <Compile Include="TransactionScriptUpdateUsers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataLayer3\DataLayer3.csproj">
+      <Project>{386eb06a-7d2f-4a6c-9f0c-c9704b4a980f}</Project>
+      <Name>DataLayer3</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
