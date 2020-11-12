@@ -31,15 +31,6 @@ You can create new database tables manualy with TSSQL or Table designer. There i
 
 * https://docs.microsoft.com/en-us/sql/relational-databases/tables/create-tables-database-engine?view=sql-server-ver15
 
-
-## Step 3 - Fill database with data
-
-Again you have a two options. 
-1. You can write your script manualy 
-2. You can use some IDE that have excel like table to create and modify data
-
-:warning: If you will use option 2, after filling DB with data export data to inser script to have in as a backup.
-
 ```sql
 CREATE TABLE [dbo].[CUSTOMERS](
 	[ID] [int] IDENTITY(1,1) NOT NULL,
@@ -55,9 +46,14 @@ PRIMARY KEY CLUSTERED
 
 ```
 
-## Step 4 - Implement connection to data 
 
-You can check project in this folder and find class **DBConnector** this class is responsible for creating a connection to SQL DB. You can find some inpiration there. There is also a tons of matirals from different sources.
+## Step 3 - Fill database with data
+
+Again you have a two options. 
+1. You can write your script manualy 
+2. You can use some IDE that have excel like table to create and modify data
+
+:warning: If you will use option 2, after filling DB with data export data to inser script to have in as a backup.
 
 ```sql
 INSERT INTO CUSTOMERS (NAME,AGE,ADDRESS,SALARY)
@@ -67,6 +63,10 @@ INSERT INTO CUSTOMERS (NAME,AGE,ADDRESS,SALARY)
 VALUES ('Khilan', 25, 'Delhi', 150.00 );
 
 ```
+
+## Step 4 - Implement connection to data 
+
+You can check project in this folder and find class **DBConnector** this class is responsible for creating a connection to SQL DB. You can find some inpiration there. There is also a tons of matirals from different sources.
 
 ## Step 5 - Implement queries
 
