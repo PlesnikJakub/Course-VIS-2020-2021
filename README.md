@@ -35,7 +35,7 @@ Always use school email for communications and use signature at the end of email
 3. [Technical Specification](/artefacts/artifact3.md)
 4. [Wireframes](/artefacts/artifact4.md)
 5. [Domain model](/artefacts/artifact5.md)
-6. Architecture :TBA
+6. [Architecture](/artefacts/artifact6.md)
 
 ## Project
 1. [Project](/project/readme.md)
