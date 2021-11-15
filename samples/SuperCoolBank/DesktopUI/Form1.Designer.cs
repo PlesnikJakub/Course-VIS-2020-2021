@@ -30,9 +30,10 @@
         {
             this.getAll_btn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.addInterest_btn = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addInterest_btn = new System.Windows.Forms.Button();
+            this.Balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,12 +52,23 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
-            this.Name});
+            this.Name,
+            this.Balance});
             this.dataGridView1.Location = new System.Drawing.Point(22, 88);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(472, 178);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // addInterest_btn
+            // 
+            this.addInterest_btn.Location = new System.Drawing.Point(214, 29);
+            this.addInterest_btn.Name = "addInterest_btn";
+            this.addInterest_btn.Size = new System.Drawing.Size(125, 23);
+            this.addInterest_btn.TabIndex = 2;
+            this.addInterest_btn.Text = "Add Interest Rate";
+            this.addInterest_btn.UseVisualStyleBackColor = true;
+            this.addInterest_btn.Click += new System.EventHandler(this.addInterest_btn_Click);
             // 
             // Id
             // 
@@ -70,15 +82,11 @@
             this.Name.Name = "Name";
             this.Name.ReadOnly = true;
             // 
-            // addInterest_btn
+            // Balance
             // 
-            this.addInterest_btn.Location = new System.Drawing.Point(214, 29);
-            this.addInterest_btn.Name = "addInterest_btn";
-            this.addInterest_btn.Size = new System.Drawing.Size(125, 23);
-            this.addInterest_btn.TabIndex = 2;
-            this.addInterest_btn.Text = "Add Interest Rate";
-            this.addInterest_btn.UseVisualStyleBackColor = true;
-            this.addInterest_btn.Click += new System.EventHandler(this.addInterest_btn_Click);
+            this.Balance.HeaderText = "Balance";
+            this.Balance.Name = "Balance";
+            this.Balance.ReadOnly = true;
             // 
             // Form1
             // 
@@ -99,8 +107,9 @@
 
         private Button getAll_btn;
         private DataGridView dataGridView1;
+        private Button addInterest_btn;
         private DataGridViewTextBoxColumn Id;
         private DataGridViewTextBoxColumn Name;
-        private Button addInterest_btn;
+        private DataGridViewTextBoxColumn Balance;
     }
 }

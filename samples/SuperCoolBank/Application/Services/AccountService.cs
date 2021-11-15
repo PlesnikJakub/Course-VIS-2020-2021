@@ -5,23 +5,27 @@ namespace Bussiness.Services
 {
     public class AccountService
     {
+        private readonly AccountDataGateway accountDataGateway;
+        public AccountService()
+        {
+            accountDataGateway = new ();
+        }
+
         public List<Account> GetAll()
         {
-            var gateway = new AccountDataGateway();
-            var result = gateway.GetAll();
-
+            var result = accountDataGateway.GetAll();
             return AccountMapper.Map(result);
         }
 
         public void AddInterestRate()
         {
-            var gateway = new AccountDataGateway();
-            var result = gateway.GetAll();
+            var result = accountDataGateway.GetAll();
             var accounts = AccountMapper.Map(result);
 
             foreach (var account in accounts)
             {
                 account.AddInterest();
+                var updated = accountDataGateway.Update(account.Id, account.Balance);
             }
         }
     }

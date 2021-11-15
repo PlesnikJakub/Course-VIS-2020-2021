@@ -9,6 +9,18 @@ namespace Bussiness.Services
 {
     internal class AccountMapper
     {
+        public static List<Account> Map(DataTable data)
+        {
+            var allAcounts = new List<Account>();
+            foreach (DataRow row in data.Rows)
+            {
+                var account = Map(row);
+                allAcounts.Add(account);
+            }
+
+            return allAcounts;
+        }
+
         public static Account Map(DataRow row)
         {
             return new Account
@@ -18,18 +30,6 @@ namespace Bussiness.Services
                 Balance = (decimal)row["balance"],
                 InterestRate = (decimal)row["interest_rate"],
             };
-        }
-
-        public static List<Account> Map(DataTable data)
-        {
-            List<Account> allAcounts = new();
-            foreach (DataRow row in data.Rows)
-            {
-                var account = AccountMapper.Map(row);
-                allAcounts.Add(account);
-            }
-
-            return allAcounts;
         }
     }
 }
